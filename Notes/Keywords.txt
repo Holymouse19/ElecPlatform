@@ -1,0 +1,57 @@
+TSO - Transmission System Operators
+Entities responsible for operating and maintainning the electricity transmission grids within a country / region
+
+NEMOs - Nominated Electricity Market Operators
+Entities designated to perform tasks related to day-ahead + intraday coupling, ie. collecting bids and offers from market participants.
+
+MCO - Market Coupling Operator
+Joint task performed by NEMOs to match electricity bids and offers, alocated cross-border capacity using a special algorithm.
+
+Cross-Zonal Capacity
+Amount of electricity that can be exchanged between different bidding zones
+
+Bidding zone
+Region of electricity trade. defined to manage congestion efficiently
+
+Flow-Based Calculation Method
+method for calculating cross-zonal capacity
+Optimized for highly interdependent grids
+
+Coordinated Net Transmission Capacity Approach
+method for calculating capacity
+used in regions where cross-zonal capacity is less interdependent
+
+Commong Grid Model
+Union-wide dataset that describes main characteristics of the power system, including generation, loads, and grid layout.
+
+
+
+
+Simplified workflow:
+1. Capacity Calc
+TSOs Work together to calculate the available cross-border capacity for the day-ahead and intraday markets. This involves creating a common grid model that estimates generation, load and network status.
+
+
+2. Order submission
+Market participants submit their bids and offers for electricity to NEMOs
+
+3. Market Coupling:
+NEMOs, performing the MCO function, use algorithms(price coupling for day-ahead, continous trading matching for intraday)
+to match these bids and offers across the EU, taking into account the available cross-zonal capacity.
+The goal is to maximize the economic benefit.
+
+4. Price determination
+The algorithm determine a single cleaing price for each bidding zone and the net position(total import or exports) for each zone.
+
+5. Results and Transfer
+The results are sent to TSOs and NEMOs, and the electricity is then transferred across the network according to the matched trades. 
+
+6. Fallback procedures
+If the main market coupling process fails, backup orcedures are in place to ensure capacity can still be allocated
+
+7. Cost recovery
+Costs incurred by TSOs and NEMOs in setting up and operating these systems are recovered through  network tariffs or fees.
+
+
+
+
